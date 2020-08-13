@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+  <section>
+    <!-- left menu -->
+    <div class="left-menu">
+      <form id="form-customer">
+        <div class="form-customer--top">
+          <h1>THÔNG TIN KHÁCH HÀNG</h1>
+
+          <div class="form-group">
+            <label for="fullname">Họ và tên <span>*</span></label><br>
+            <input id="fullname" type="text" name="fullname">
+          </div>
+
+          <div class="form-group">
+            <label for="address">Địa chỉ <span>*</span></label><br>
+            <input type="text" name="address" id="address" placeholder="Ghi rõ: Số nhà + xã/phường + Quận/Huyện + Tỉnh/Thành phố">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Số điện thoại <span>*</span></label><br>
+            <input type="text" name="phone" id="phone">
+          </div>
+
+          <div class="form-group">
+            <input type="checkbox" name="create-account" id="create-account">
+            <label for="create-account">Tạo tài khoản mới?</label>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Địa chỉ email <span>*</span></label><br>
+            <input type="email" name="email" id="email" required>
+          </div>
+
+        </div>
+        <hr>
+        <div class="form-customer--bottom">
+          <h1>THÔNG TIN THÊM</h1>
+          <div class="form-group"></div>
+            <label for="fullname">Ghi chú <span>*</span></label><br>
+            <textarea cols="80" rows="8" placeholder="Ghi chú về giao hàng và nhận hàng"></textarea>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- right menu -->
+    <div class="right-menu">
+      <div class="mg-20px">
+        <h1>ĐƠN HÀNG CỦA BẠN</h1>
+        <table>
+          <tr>
+            <th>SẢN PHẨM</th>
+            <th>TỔNG CỘNG</th>
+          </tr>
+          <tr>
+            <td class="color-gray">7 Nights Tabaco - Tony Exotic x1</td>
+            <th>600,000đ</th>
+          </tr>
+          <tr>
+            <th>Tổng phụ</th>
+            <th>600,000đ</th>
+          </tr>
+          <tr>
+            <th>Tổng cộng</th>
+            <th>600,000đ</th>
+          </tr>
+        </table>
+        <div class="form-group">
+          <input type="radio" name="pay" id="pay-delivery" checked="checked">
+          <label for="pay-delivery" class="bold">Thanh toán chuyển khoản</label><br>
+          <p>Thanh toán chuyển khoản</p>
+          <input type="radio" name="pay" id="pay-transfer">
+          <label for="pay-transfer" class="bold">Thanh toán khi nhập hàng</label><br>
+        </div>
+        <div class="form-group">
+          <button>ĐẶT HÀNG</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
+<style type="text/css">
+
+  section {
+    display: flex;
+    width: 100%;
+  }
+
+  .left-menu {
+    margin: 20px 20px 20px 200px;
+    width: 65%;
+  }
+
+  .right-menu {
+    margin: 20px 200px 20px 50px;
+    width: 60%;
+    border: 2px solid #4167b2;
+    height: fit-content;
+  }	
+
+  span {
+    color: red;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+  }
+
+  td, th {
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+  }
+
+  td:nth-child(2), th:nth-child(2) {
+    text-align: right;
+  }
+
+  .form-group {
+    margin-top: 20px;
+  }
+
+  .mg-20px {
+    margin: 20px;
+  }
+
+  button {
+    padding: 14px;
+    background: #4167b2;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid #4167b2;
+    margin: 20px 0;
+    width: 120px;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  hr {
+    width: 100%;
+    float: left;
+    margin: 30px 0;
+  }
+
+  input[type=text], input[type=email] {
+    margin-top: 5px;
+    height: 25px;
+    width: 200px;
+  }
+
+  input[name=address] {
+    width: 500px;
+  }
+
+  input[type=radio] {
+    margin-top: 10px;
+  }
+
+  textarea {
+    margin-top: 5px;
+  }
+
+  .color-gray {
+    color: gray;
+  }
+</style>
