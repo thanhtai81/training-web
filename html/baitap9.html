@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="UTF-8">
+  </head>
+   <body>
+		<section> 
+		 <div class="left-menu">
+			<form>
+				<h2>Thông tin khách hàng </h2>
+				<label for="fname">Họ tên</label><br>
+				<input type="text" id="fname"><br>
+ 
+				<label for=" Stress">Địa chỉ</label><br>
+				<input type="text" id="Srtess" placeholder="Địa chỉ "><br>
+ 
+				<label for="numberphone">Số điện thoại</label><br>
+				<input type="number" id="numberphone"><br>
+ 
+				<label for="email">Địa chỉ email</label><br>
+				<input type="text" id="email">
+ 
+				<input type="radio" id="newacc" name="newacc" value="Tạo tài khoản mới">
+				<label for="newacc">Tạo tài khoản mới</label><br>
+				<hr>
+				<h2>Thông tin thêm</h2>
+				<p>Ghi chú</p>
+				<textarea rows="4" cols="80" placeholder="Ghi chú về giao hàng và nhận hàng "></textarea>
+			</form>
+		 </div>
+
+		 <div class="right-menu">
+			<table>
+				<h2>Đơn hàng của bạn </h2>
+				<tr>
+				 <th>Sản phẩm </th>
+				 <th> Tổng cộng</th>
+				 <tr>
+					 <td>
+					 <textarea name="name" id="" cols="30" rows="2" style="border:none;" placeholder="7 Nights tobacco-Tony Exotic * 1"></textarea>
+					 </td>
+					 <th>600.000đ</th>
+					 <tr>
+					 <td>Tổng phụ</td>
+					 <th>600.000đ</th>
+					 </tr>
+				 <tr>
+					 <td>Tổng cộng</td>
+					 <th>600.000đ</th>
+					 <br>
+			</table>
+			<input type="radio" id="buy1" name="buy1" value="buy1">
+				<label for="buy1">Thanh toán chuyển khoản</label>
+				<br>
+				<input type="radio" id="buy1" name="buy1" value="buy1">
+				<label for="buy1">Thanh toán khi nhận hàng(COD) </label><br>
+		 </div>
+		</section>
+   </body>
+</html> 
+<style>
+	th,td {
+		border-collapse: collapse;
+		padding: 20px;
+		border:1px solid black
+		border:none
+	}
+ table{
+	
+ }
+
+ section {
+	 display: flex;
+	 width: 100%;
+ }
+
+ .left-menu{
+	width: 65%;
+ }
+
+ .right-menu{
+	 width: 35%;
+ }
+</style>
