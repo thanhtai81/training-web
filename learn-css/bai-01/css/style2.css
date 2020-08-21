@@ -1,0 +1,7 @@
+.list-type{
+    font-size: 18px;
+}
+
+li {
+    display: inline-flex;
+}
