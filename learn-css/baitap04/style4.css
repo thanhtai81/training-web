@@ -1,0 +1,28 @@
+.top-home{
+  width: 100% ;
+  font-size: 20px;
+  padding: 5px;
+  background:pink;
+}
+form {
+  width:60%;
+  margin-right: 10px;
+}
+table{
+  padding: 10px;
+  width: 30%;
+}
+body{
+  margin: auto;
+}
+.container {
+  display: flex;
+  width: 100%;
+}
+#form-card {
+  width: 60%;
+}
+.table-info {
+  width: 40%;
+}
+
