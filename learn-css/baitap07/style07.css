@@ -1,0 +1,25 @@
+.main{
+    background: #fff;
+    padding: 20px 30px 20px 20px;
+    margin:0 auto;
+    width: 15%;
+    height: 30%;
+    
+}
+img{
+    height: 50px;
+    width: 50px;
+}
+
+.cover-img {
+    width: 5%;
+    margin: 100px auto 0;
+}
+
+body {
+    background: #ddd;
+}
+
+input[type='text'], input[type='password'] {
+    width: 100%;
+}
