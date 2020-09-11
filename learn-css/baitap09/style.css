@@ -1,0 +1,51 @@
+.top {
+    width: 100%;
+    display: flex;
+}
+.left-top {
+    width: 40%;
+}
+.right-top {
+    width: 60%;
+   margin: 0 650px;
+}
+
+img {
+    width: 100%;
+    height: 700px;
+   
+}
+
+li {
+    display: inline;
+    padding: 20px;
+    border-right: 1px solid  #806000;
+}
+
+a {
+    color:  #806000;
+    text-decoration: none;
+    padding: 20px;
+}
+body {
+    background: #3b2712;
+    color: #806000;
+    margin: auto;
+    text-align: left;
+    width: 70%;
+}
+
+.list {
+    border: 1px solid #806000;
+    margin: 20px 0;
+    width: 100%;
+}
+
+hr {
+    border: 1px dashed;
+}
+
+p{
+    padding: 20px;
+    border: solid 1px #806000;
+}
