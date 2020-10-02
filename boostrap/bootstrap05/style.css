@@ -1,0 +1,15 @@
+.card {
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    border: solid 1px pink;
+}
+
+.card-header {
+    background-color: pink;
+    color: white;
+}
+a{
+    background-color: pink !important;
+    border-color: pink !important;
+}
