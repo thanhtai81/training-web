@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <label for="inputa">a:</label>
+    <input type="text" id="inputa" name="inputa">
+
+    <label for="inputa">b:</label>
+    <input type="text" id="inputb" name="inputb">
+    <br>
+
+    <label for="inputa">Max:</label>
+    <input type="text" id="input-max" name="inputa"><br>
+    <button type="button" id="myBtn" onclick="myFunction()">Try it</button>
+  </form>
+  <script>
+    
+    function myFunction() {
+
+      var numberA = document.getElementById("inputa").value;
+      var numberB = document.getElementById("inputb").value;
+
+      document.getElementById("input-max").value = Math.max(numberA, numberB);
+
+      // if (parseInt(numberA) > parseInt(numberB)) {
+      //     document.getElementById("input-max").value = numberA;
+      // } else {
+      //   document.getElementById("input-max").value = numberB;
+      // }
+
+
+    }
+  </script>
+</body>
+</html>
