@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head> <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+
+    <label for="valuea">n</label>
+    <input type="text" id="valuen" name="inputn"><br>
+    
+    <button for="valueN!" onclick="nDayThua()">n!</button>
+    <input type="text" id="value-day-thua" name="inputN!"><br>
+    
+    <button for="valuea" onclick="nChan()">n chan</button>
+    <input type="text" id="valueNChan" name="inputNChan"><br>
+
+    <button for="valuea" onclick="tongN()">Tong -> 1</button>
+    <input type="text" id="valueTong" name="inputTong"><br>
+
+    <button for="valuea" onclick="nChinhPhuong()">n la chinh phuong?</button>
+    <input type="text" id="valueChinhPhuong" name="inputChinhPhuong"><br>
+
+    <script>
+      function nDayThua() {
+        var n = document.getElementById('valuen').value;
+        var giaithua = 1;
+        for (i = 1; i <= n; i++) {
+          giaithua *= i;
+        }
+        document.getElementById('value-day-thua').value = giathua;
+      }
+
+      function nChan() {
+        var n =document.getElementById('valuen').value;
+        if (n % 2 == 0){
+          document.getElementById('valueNChan').value = "so chan";
+        } else {
+          document.getElementById('valueNChan').value = "so le";
+        }
+      }
+
+      function tongN() { 
+        var n = document.getElementById('valuen').value;
+        var tong = 0;
+        for (i = 1; i <= n; i++) {
+          if (i % 2 != 0) {
+            tong += i;
+          }
+        }
+        document.getElementById('valueTong').value = tong;
+      }
+
+      function nChinhPhuong() {
+        var n = document.getElementById('valuen').value;
+        var N = Math.sqrt(n);
+        if(N % 1 == 0){
+          document.getElementById('valueChinhPhuong').value = "no la so chinh phuong";
+        } else { 
+          document.getElementById('valueChinhPhuong').value =" no khong phai la so chinh phuong";
+        }      
+      }
+    </script>
+  </body>
+  </html>
