@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head> <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label for="valuea">a</label>
+      <input type="text" id="valuea" name="inputa">
+      
+      <label for="valuea">b:</label>
+      <input type="text" id="valueb" name="inputb">
+      
+      <label for="valuea">c:</label>
+      <input type="text" id="valuec" name="inputc"><br>
+
+      <label for="valuea">Ket Qua:</label>
+      <input type="text" id="valueKQ" name="inputb" disabled><br>
+
+      <button type="button" id="result" onclick="quaraticEquation()">max</button>
+    </form>
+    <script>
+      function quaraticEquation() {
+        var a = document.getElementById('valuea').value;
+        var b = document.getElementById('valueb').value;
+        var c = document.getElementById('valuec').value;
+
+        if (a == 0) {
+          document.getElementById('valuea').value = "";
+          document.getElementById('valueb').value = "";
+          document.getElementById('valuec').value = "";
+          document.getElementById('valueKQ').value = "Moi nhap a khac 0";
+        } else {
+          var delta = b*b-4*a*c;
+          switch(true) {
+            case (delta < 0):
+              document.getElementById('valueKQ').value = "phuong trinh vo nghiem";
+              break;
+
+            case (delta == 0):
+              var x = -b/2*a;
+              document.getElementById('valueKQ').value  = `phuong trinh co nghiem kep x1 = x2 = ${x}`;
+              break;
+
+            case (delta > 0):
+              var x1 = (-b + Math.sqrt(delta))/2*a;
+              var x2 = (-b - Math.sqrt(delta))/2*a;
+              document.getElementById('valueKQ').value = `phuong trinh co 2 nghiem don x1 = ${x1} va x2 = ${x2}`;
+              break;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
