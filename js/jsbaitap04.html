@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <form>
+      <label for="inputa">a:</label>
+      <input type="text" id="inputa" name="inputa"><br>
+
+      <label for="inputa">b:</label>
+      <input type="text" id="inputb" name="inputb">
+      <br>
+      <label for="inputa">c:</label>
+      <input type="text" id="inputc" name="inputc"><br>
+  
+      <label for="inputa">Max:</label>
+      <input type="text" id="input-max" name="inputa"disabled><br>
+      <button type="button" id="myBtn" onclick="myFunction()">Try it</button>
+    </form>
+
+    <script>
+     function myFunction() {
+      var numberA = document.getElementById("inputa").value;
+      var numberB = document.getElementById("inputb").value;
+      var numberC = document.getElementById("inputc").value;
+      document.getElementById("input-max").value = Math.max(numberA, numberB, numberC);
+      }
+    </script>
+    
+  </body>
+</html>

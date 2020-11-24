@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+  <form>
+    <label for="inputa">Nhap so can dem :</label>
+    <input type="text" id="inputa">
+
+    <label for="result">Bang Ket Qua</label>
+    <input type="text" id="result">
+
+    <button type="button" id="myBtn" onclick="myFunction()">Tim so lieu</button>
+  </form>
+  <script>
+    function myFunction() {
+        var n = document.getElementById('inputa').value;
+        var tong = 0;
+        for(i = 0; i <= n; i++) {
+          tong += i;
+        document.getElementById('result').value = tong;
+        }
+      }
+  </script>
+  </body>
+</html>

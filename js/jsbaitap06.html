@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <form>
+      <label for="valueN">Nhap N</label>
+      <input type="text" id="valueN" >
+
+      <label for="valueKq">Bang Ket Qua</label>
+      <input type="text" id="valueKq" >
+
+      <button type="button" id="myBtn" onclick="myFunction()">Tim Kiem</button>
+    </form>
+    <script>
+      function myFunction() {
+        var n = document.getElementById('valueN').value;
+        var result = [];
+        for(i = 1; i <= n; i++) {
+          if (i % 3 == 0 && i < n) {
+            result.push(parseInt(i));
+          }
+        }
+        document.getElementById('valueKq').value = result;
+      }
+    </script>
+  </body>
+</html>

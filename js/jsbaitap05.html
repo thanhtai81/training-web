@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <form>
+      <label for="valuea">a</label>
+      <input type="text" id="valuea" name="inputa">
+      
+      <label for="valuea">b:</label>
+      <input type="text" id="valueb" name="inputb">
+      
+      <label for="valuea">Ket Qua:</label>
+      <input type="text" id="valueKq" name="inputb" disabled><br>
+
+      <button type="button" id="result" onclick="quaraticEquation()">max</button>
+
+    </form>
+    <script>
+    function quaraticEquation(a,b) {
+        var a = document.getElementById('valuea').value;
+        var b = document.getElementById('valueb').value;
+      if ( a == 0) {
+        if (b == 0) {
+          document.getElementById('valueKq').value = "phuong trinh vo so nghiem";
+        } else {
+          document.getElementById('valueKq').value = "phuong trinh vo nghiem";
+        }
+      } else {
+        document.getElementById('valueKq').value = "phuong trinh co nghiem";
+        var x = -b / a;
+        document.getElementById('valueKq').value = x;
+      }
+    }
+    </Script>
+  </body>
+</html>
