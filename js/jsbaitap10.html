@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <form>
+
+      <label for="inputN">N:</label>
+      <input type="text" id="inputN">   
+
+      <label for="result"  >Bang Ket Qua</label>
+      <input type="text" id="result"disabled><br>
+
+      <button type="button" id="myBtn" onclick="myFunction();">Tim so lieu</button>
+
+    </form>
+    <script>
+    function myFunction() {
+     var n = document.getElementById('inputN').value;
+     
+     var sum = 0;
+     for (var num of n){
+      sum = sum + parseInt(num);
+     }
+     document.getElementById('result').value = sum;
+    }
+    </script>
+  </body>
+</html>

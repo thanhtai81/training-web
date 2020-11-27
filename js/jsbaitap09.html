@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <form>
+
+      <label for="inputN">N:</label>
+      <input type="text" id="inputN">   
+
+      <label for="result"  >Bang Ket Qua</label>
+      <input type="text" id="result"disabled><br>
+
+      <button type="button" id="myBtn" onclick="hanldePrime();">Tim so lieu</button>
+
+    </form>
+
+    <script>
+      function hanldePrime() {
+        var number = document.getElementById('inputN').value;
+        var flat = true;
+        for (var i = 2; i < number; i++) {
+          if (number % i === 0 ) {
+            flat = false;
+            break;
+          }
+        }
+        if (flat == true) {
+          document.getElementById('result').value = "so nguyen to";
+        } else {
+          document.getElementById('result').value = "khong phai so nguyen to";
+        }
+      }
+    </script>
+  </body>
+</html>

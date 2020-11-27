@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <form>
+      <label for="inputa">a:</label>
+      <input type="text" id="inputA"><br>
+
+      <label for="inputa">b:</label>
+      <input type="text" id="inputB">
+      <br>
+      <label for="inputa">c:</label>
+      <input type="text" id="inputC"><br>
+  
+      <label for="inputa">Ket Qua</label>
+      <input type="text" id="result"disabled><br>
+
+      <button type="button" id="myBtn" onclick="myFunction()">Try it</button>
+    </form>
+    <script>
+      function myFunction() {
+        var a = document.getElementById('inputA').value;
+        var b = document.getElementById('inputB').value;
+        var c = document.getElementById('inputC').value;
+        switch(true) {
+          case (a*a == b*b + c*c || b*b == a*a + c*c || c*c == a*a + b*b):
+            document.getElementById('result').value = "tam giac vuong";
+            break;
+
+          case (a == b && b == c  && a == c):
+            document.getElementById('result').value = "tam giac deu";
+            break;
+
+          case (a == c || a == b || b == c):
+            document.getElementById('result').value = " tam giac can";
+            break;
+          default: 
+          document.getElementById('result').value = " tam giac thuong";
+        }
+      }
+    </script>
+  </body>
+</html>
